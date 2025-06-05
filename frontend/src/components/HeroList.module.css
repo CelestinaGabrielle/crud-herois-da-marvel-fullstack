@@ -1,0 +1,94 @@
+.list {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  max-width: 96rem;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #facc15;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #facc15;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.label {
+  color: #f87171;
+  font-weight: 600;
+}
+
+.value {
+  color: white;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edit {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+}
+
+.edit:hover {
+  background: linear-gradient(to right, #1d4ed8, #1e3a8a);
+}
+
+.delete {
+  background: linear-gradient(to right, #dc2626, #facc15);
+}
+
+.delete:hover {
+  background: linear-gradient(to right, #991b1b, #fde047);
+}

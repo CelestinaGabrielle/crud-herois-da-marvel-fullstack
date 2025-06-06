@@ -13,3 +13,16 @@
   margin-bottom: 2rem;
   color: #e11d48;
 }
+.cancelButton {
+  background-color: #e11d48;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: #be123c;
+}

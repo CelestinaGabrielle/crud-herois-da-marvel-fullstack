@@ -1,4 +1,4 @@
-import { Hero } from "../types/hero";
+import { Hero } from "../../types/hero";
 import styles from "./HeroList.module.css";
 
 interface Props {

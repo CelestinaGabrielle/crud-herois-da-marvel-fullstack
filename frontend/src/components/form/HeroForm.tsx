@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Hero } from "../types/hero";
+import { Hero } from "../../types/hero";
 import styles from "./HeroForm.module.css";
 
 interface Props {
